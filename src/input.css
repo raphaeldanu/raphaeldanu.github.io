@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .social-icons{
+    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-light text-light hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out;
+  }
+
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-primary;
+  }
+}
+
+body{
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.hamburger-active > span:nth-child(1){
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2){
+  @apply scale-0;
+} 
+
+.hamburger-active > span:nth-child(3){
+  @apply -rotate-45;
+}
